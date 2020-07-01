@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.attendencemanagement2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_student"
+            app:destination="@id/nav_student" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_teacher"
+            app:destination="@id/nav_teacher" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_course"
+            app:destination="@id/nav_course" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_attendance"
+            app:destination="@id/nav_attendance" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_logout"
+            app:destination="@id/nav_logout" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_student"
+        android:name="com.example.attendencemanagement2.ui.student.StudentFragment"
+        android:label="@string/menu_student"
+        tools:layout="@layout/fragment_student" />
+
+    <fragment
+        android:id="@+id/nav_teacher"
+        android:name="com.example.attendencemanagement2.ui.teacher.TeacherFragment"
+        android:label="@string/menu_teacher"
+        tools:layout="@layout/fragment_teacher" />
+
+    <fragment
+        android:id="@+id/nav_course"
+        android:name="com.example.attendencemanagement2.ui.course.CourseFragment"
+        android:label="@string/menu_course"
+        tools:layout="@layout/fragment_course" />
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.example.attendencemanagement2.ui.attendance.AttendanceFragment"
+        android:label="@string/menu_attendance"
+        tools:layout="@layout/fragment_attendance" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.attendencemanagement2.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.attendencemanagement2.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

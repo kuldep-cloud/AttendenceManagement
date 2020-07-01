@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/firstname_edittext"
+        android:hint="First name"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/rollnumber_edittext"
+        android:hint="Enter Roll number"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/contactnumber_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Contact Number"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/emailid_edittext"
+        android:hint="Email Id"
+        ></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Course: "
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        ></TextView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/course_list2"
+        android:layout_margin="10dp"
+        ></ListView>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button_style"
+           android:text="Add Student"
+           android:id="@+id/addstudent"
+           android:layout_margin="10dp"
+           android:textColor="@android:color/white"
+           android:onClick="addstudentbtn"
+           ></Button>
+
+</LinearLayout>
